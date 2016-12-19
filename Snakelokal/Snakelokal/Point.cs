@@ -12,6 +12,14 @@ namespace Snakelokal
         public int y;
         public char symb;
 
+        //конструктор класса, конструкторов может быть несколько
+        public Point(int _x, int _y, char _symb)
+        {
+            x = _x;
+            y = _y;
+            symb = _symb;
+        }
+
         public void Drow()
         {
             Console.SetCursorPosition( x, y );
